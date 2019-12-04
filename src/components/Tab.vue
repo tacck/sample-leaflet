@@ -30,12 +30,16 @@ export default {
   },
   methods: {
     clickStation() {
+      this.$ga.event('tab-button', 'static', 'static', 1);
+
       this.stationVariant = "info";
       this.hereVariant = "";
 
       this.$emit("changeActive", "static");
     },
     clickHere() {
+      this.$ga.event('tab-button', 'current', 'current', 1);
+
       this.stationVariant = "";
       this.hereVariant = "info";
 

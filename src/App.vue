@@ -17,6 +17,9 @@ export default {
     Header,
     Main,
     Footer
+  },
+  mounted: function () {
+    this.$ga.page('/');
   }
 };
 </script>
