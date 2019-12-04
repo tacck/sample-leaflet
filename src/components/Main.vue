@@ -40,7 +40,6 @@ export default {
   },
   methods: {
     setActive: function(location) {
-      console.log("active:" + location);
       this.lat = this.geosObject[location][0];
       this.lon = this.geosObject[location][1];
     },
@@ -49,7 +48,6 @@ export default {
         position.coords.latitude,
         position.coords.longitude
       ];
-      console.log(this.geosObject.current);
     }
   }
 };
